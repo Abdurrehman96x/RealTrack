@@ -18,6 +18,6 @@ body {
 
 .leaflet-marker-icon {
     transform: rotate(0deg);
-    /* Default rotation, adjust if needed */
+
 }
 
