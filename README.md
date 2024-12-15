@@ -1,49 +1,50 @@
 
 # Software Requirements Specification (SRS)
 
-Project Name: Real Track Website
+**Project Name: Real Track Website**
 
 
-1. Introduction
-1.1 Purpose
+1. Introduction <br />
+1.1 Purpose <br />
 The purpose of this document is to define the software requirements for the Real Track Website. This system enables real-time tracking of up to two users simultaneously, displaying their location and providing directions for the path between them.
-1.2 Scope
-The Real Track Website is a web-based application designed to provide users with real-time location tracking and navigation capabilities. The system supports the following key features:
-•	Real-time tracking of up to two users.
-•	Display of user locations on an interactive map.
-•	Calculation and display of the shortest path with turn-by-turn directions.
-•	Secure and user-friendly interface for location sharing and navigation.
-1.3 Definitions, Acronyms, and Abbreviations
-•	SRS: Software Requirements Specification
-•	API: Application Programming Interface
-1.4 References
-•	Leaflet Documentation
-•	1.5 Overview
-•	This document describes the functional and non-functional requirements, design constraints, and system models for the Real Track Website.
-2.1 Product Perspective
-The Real Track Website will leverage technologies such as Node.js, Express.js, Socket.IO, and the Leaflet.js library for its backend and frontend functionalities. The system will be deployed as a responsive web application compatible with modern browsers and mobile devices.
-2.2 Product Features
-1.	Real-Time Location Tracking:
-o	Track up to two users simultaneously.
-o	Update user locations every 5 seconds.
-2.	Path Direction Display:
-o	Show the shortest path between two users.
-o	Provide turn-by-turn directions and estimated time of arrival.
-3.	Interactive Map:
-o	Display user locations on an interactive map.
-o	Allow zooming, panning, and changing map views.
-2.3 User Characteristics
-•	Users are expected to have basic familiarity with web applications and navigation tools.
-•	Targeted primarily at individuals or small groups needing location tracking in real-time.
-2.4 Constraints
-•	The system can only track a maximum of two users at a time.
-•	Internet connection is required for real-time updates.
-•	Accuracy depends on the user’s GPS device and network connectivity.
-3. Functional Requirements
- Real-Time Tracking
-•	The system shall update the location of each user every 5 seconds using Socket.IO for real-time communication.
-•	Display both users’ locations on the same map view.
-4. Non-Functional Requirements
-Compatibility
-•	Compatible with modern browsers which supports geolocation (Chrome, Firefox, Safari, Edge).
+1.2 Scope <br /><br />
+The Real Track Website is a web-based application designed to provide users with real-time location tracking and navigation capabilities. The system supports the following key features: <br /> <br />
+•	Real-time tracking of up to two users.<br />
+•	Display of user locations on an interactive map.<br />
+•	Calculation and display of the shortest path with turn-by-turn directions.<br />
+•	Secure and user-friendly interface for location sharing and navigation.<br /><br />
+1.3 Definitions, Acronyms, and Abbreviations<br /><br />
+•	SRS: Software Requirements Specification<br />
+•	API: Application Programming Interface<br /><br />
+1.4 References <br /><br />
+•	Leaflet Documentation <br />
+•	1.5 Overview<br /><br />
+•	This document describes the functional and non-functional requirements, design constraints, and system models for the Real Track Website. <br /><br />
+2. Overall Description  ><br /><br />
+2.1 Product Perspective<br /><br />
+The Real Track Website will leverage technologies such as Node.js, Express.js, Socket.IO, and the Leaflet.js library for its backend and frontend functionalities. The system will be deployed as a responsive web application compatible with modern browsers and mobile devices.<br />
+2.2 Product Features<br />
+.	Real-Time Location Tracking:<br /><br />
+o	Track up to two users simultaneously.<br />
+o	Update user locations every 5 seconds.<br />
+.	Path Direction Display:<br /><br />
+o	Show the shortest path between two users.<br />
+o	Provide turn-by-turn directions and estimated time of arrival.<br />
+.	Interactive Map:<br /><br />
+o	Display user locations on an interactive map.<br />
+o	Allow zooming, panning, and changing map views.<br /><br />
+2.3 User Characteristics<br />
+•	Users are expected to have basic familiarity with web applications and navigation tools.<br />
+•	Targeted primarily at individuals or small groups needing location tracking in real-time.<br /><br />
+2.4 Constraints<br />
+•	The system can only track a maximum of two users at a time.<br />
+•	Internet connection is required for real-time updates.<br />
+•	Accuracy depends on the user’s GPS device and network connectivity.<br /><br />
+3. Functional Requirements<br /><br />
+ Real-Time Tracking<br />
+•	The system shall update the location of each user every 5 seconds using Socket.IO for real-time communication.<br />
+•	Display both users’ locations on the same map view.<br />
+4. Non-Functional Requirements<br /><br />
+Compatibility<br />
+•	Compatible with modern browsers which supports geolocation (Chrome, Firefox, Safari, Edge).<br />
 
